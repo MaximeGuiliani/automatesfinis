@@ -17,5 +17,11 @@ if len(sys.argv) != 3:
 automatonfile = sys.argv[1]  
 word = sys.argv[2]
 
-print("TODO: faire le TP 1")  
+a = automaton.Automaton("abc")
+a.add_transition("0","x","2 ")
+a.add_transition("0","y","3")
+a.make_accept("3")
+a.to_graphviz("abc-test")
+print(a)
+#print("TODO: faire le TP 1")  
 
